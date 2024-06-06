@@ -1,0 +1,8 @@
+version: "3"
+services:
+  hazelcast:
+    image: hazelcast/hazelcast:5.4.0-slim-jdk21
+    ports:
+      - "5701:5701"
+    environment:
+      - HZ_USERCODEDEPLOYMENT_ENABLED=true
